@@ -1,20 +1,19 @@
-// AUTOR: Christian González Martín
-// FECHA: 16/02/2026
-// EMAIL: alu0101631981@ull.edu.es
-// VERSION: 1.0
-// ASIGNATURA: Algoritmos y Estructuras de Datos
-// PRÁCTICA Nº: 1
-// COMENTARIOS: se indican entre [] las pautas de estilo aplicadas de
-//              "C++ Programming Style Guidelines"
-//              https://geosoft.no/development/cppstyle.html
-// COMPILACIÓN: g++ -g rational_t.cpp main_rational_t.cpp -o main_rational_t
-
-// pauta de estilo [92]: comentarios multilínea usando solo "//"
+/* 
+*  AUTOR: Christian González Martín
+*  FECHA: 16/02/2026
+*  EMAIL: alu0101631981@ull.edu.es
+*  VERSION: 1.0
+*  ASIGNATURA: Algoritmos y Estructuras de Datos
+*  PRÁCTICA Nº: 1
+*  COMENTARIOS: se indican entre [] las pautas de estilo aplicadas de
+*              "C++ Programming Style Guidelines"
+*              https://geosoft.no/development/cppstyle.html
+*  COMPILACIÓN: g++ -g rational_t.cpp main_rational_t.cpp -o main_rational_t
+*/
 
 #include <iostream>
 #include <cmath>
 
-// pauta de estilo [41]: ficheros de cabecera agrupados y separados
 #include "rational_t.hpp"
 
 using namespace std;
@@ -42,6 +41,7 @@ int main() {
   cout << "x == y? " << (x.is_equal(y) ? "true" : "false") << endl;
   cout << "x < y? " << (x.is_greater(y) ? "true" : "false") << endl;
   cout << "x > y? " << (x.is_less(y) ? "true" : "false") << endl;
+  cout << "x == 0? " << (x.is_zero() ? "true" : "false") << endl;
 
   // FASE III
   cout << "a + b: ";
