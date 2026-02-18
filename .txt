@@ -1,0 +1,55 @@
+  // MODIFICACIONES
+  rational_t cuadrado();
+  void entero();
+  rational_t inverso();
+  rational_t root();
+  rational_t negativo();
+
+  // MODIFICACIONES POSIBLES
+rational_t
+rational_t::cuadrado() {
+  rational_t cuadrado;
+  cuadrado.set_num(get_num() * get_num());
+  cuadrado.set_den(get_den() * get_den());
+  return cuadrado;
+}
+
+void
+rational_t::entero() {
+  if (get_num() % get_den() == 0) {
+    cout << "Es un número entero.\n";
+  } else {
+    cout << "No es entero.\n";
+  }
+}
+
+rational_t
+rational_t::inverso() {
+  return rational_t(get_den(), get_num());
+}
+
+rational_t
+rational_t::root() {
+  return rational_t(sqrt(get_num()), sqrt(get_den()));
+}
+
+
+rational_t
+rational_t::negativo() {
+  return rational_t((-get_num()), (get_den()));
+}
+
+  // MODIFICACIONES
+  cout << "(a / b)²: ";
+  c.cuadrado().write();
+
+  c.entero();
+
+  cout << "(a / b)^-1: ";
+  c.inverso().write();
+
+  cout << "sqrt(a / b): ";
+  c.root().write();
+
+  cout << "-a / b: ";
+  c.negativo().write();

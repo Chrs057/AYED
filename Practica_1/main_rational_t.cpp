@@ -55,19 +55,9 @@ int main() {
   
   cout << "a / b: ";
   a.divide(b).write();
-
-  // MODIFICACIONES
-  cout << "(a / b)²: ";
-  c.cuadrado().write();
-
-  c.entero();
-
-  cout << "(a / b)^-1: ";
-  c.inverso().write();
-
-  cout << "sqrt(a / b): ";
-  c.root().write();
   
+  // MODIFICACIÓN
+  c.entero();
   
   return 0;
 }

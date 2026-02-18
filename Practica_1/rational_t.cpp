@@ -118,16 +118,8 @@ rational_t::divide(const rational_t& r) {
   return division;
 }
 
-
-// MODIFICACIONES POSIBLES
-rational_t
-rational_t::cuadrado() {
-  rational_t cuadrado;
-  cuadrado.set_num(get_num() * get_num());
-  cuadrado.set_den(get_den() * get_den());
-  return cuadrado;
-}
-
+// MODIFIACIÓN
+// función que comprueba si un número racional es entero
 void
 rational_t::entero() {
   if (get_num() % get_den() == 0) {
@@ -136,17 +128,6 @@ rational_t::entero() {
     cout << "No es entero.\n";
   }
 }
-
-rational_t
-rational_t::inverso() {
-  return rational_t(get_den(), get_num());
-}
-
-rational_t
-rational_t::root() {
-  return rational_t(sqrt(get_num()), sqrt(get_den()));
-}
-
 
 // E/S
 // imprime un racional en el flujo de salida

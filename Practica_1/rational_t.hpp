@@ -50,12 +50,10 @@ public:
   rational_t multiply(const rational_t&);
   rational_t divide(const rational_t&);
 
-  // MODIFICACIONES
-  rational_t cuadrado();
+  // MODIFICACIÓN
   void entero();
-  rational_t inverso();
-  rational_t root();
-  
+
+  // E/S
   void write(ostream& = cout) const;   //metodo que imprime en pantalla el numero racional
   void read(istream& = cin);           //metodo que lee un numero racional desde el teclado
   
