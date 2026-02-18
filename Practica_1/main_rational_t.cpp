@@ -36,7 +36,7 @@ int main() {
   c.write();
 
   // FASE II
-  rational_t x(1, 3), y(2, 3);
+  rational_t x(2, 3), y(2, 3);
   x.write();
   y.write();
   cout << "x == y? " << (x.is_equal(y) ? "true" : "false") << endl;
